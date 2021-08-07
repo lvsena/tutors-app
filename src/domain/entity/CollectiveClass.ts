@@ -7,13 +7,14 @@ export class CollectiveClass extends Class {
   private students: Student[];
 
   constructor(
+    code: number,
     tutor: Tutor,
     students: Student[],
     dateTimeInit: Date,
     dateTimeEnd: Date,
     payment: Payment,
   ) {
-    super(tutor, dateTimeInit, dateTimeEnd, payment);
+    super(code, tutor, dateTimeInit, dateTimeEnd, payment);
     this.students = students;
   }
 }

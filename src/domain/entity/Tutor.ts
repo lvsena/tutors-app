@@ -1,4 +1,4 @@
-import { AcademicCourse } from './AcademicCouse';
+import { AcademicCourse } from './AcademicCourse';
 import { MasteredSchoolContent } from './MasteredSchoolContent';
 import { User } from './User';
 
