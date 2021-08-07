@@ -1,5 +1,4 @@
-export class User {
-  code: number;
+export class UserInputData {
   name: string;
   cpf: string;
   birthDate: Date;
@@ -7,16 +6,14 @@ export class User {
   phone: string;
   email: string;
 
-  constructor(
-    code: number,
-    name: string,
-    cpf: string,
-    birthDate: Date,
-    gender: string,
-    phone: string,
-    email: string,
-  ) {
-    this.code = code;
+  constructor({ name, cpf, birthDate, gender, phone, email }: {
+    name: string;
+    cpf: string;
+    birthDate: Date;
+    gender: string;
+    phone: string;
+    email: string;
+  }) {
     this.name = name;
     this.cpf = cpf;
     this.birthDate = birthDate;

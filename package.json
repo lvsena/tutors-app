@@ -5,10 +5,11 @@
   "repository": "https://github.com/lvsena/tutors-app.git",
   "author": "Leonardo Sena <leosena1995@gmail.com>",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc-watch --onSuccess \"node ./dist/index.js\"",
-    "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
-    "test": "tsc && jest dist/"
+    "tsc:init": "tsc --init",
+    "tsc:build": "tsc",
+    "test": "tsc && jest ./dist --forceExit",
+    "main": "tsc && node ./dist/index",
+    "test:coverage": "tsc && jest ./dist --coverage --forceExit"
   },
   "license": "MIT",
   "devDependencies": {
