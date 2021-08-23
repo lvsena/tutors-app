@@ -9,11 +9,12 @@ export default class Main {
 
       await userController.create({
         name: 'Leonardo Sena',
-        cpf: '123.345.355-67',
+        cpf: '052.618.930-46',
         birthDate: '12/12/1999',
         gender: 'M',
         phone: '99 99999-9999',
         email: 'leo@email.com',
+        password: '12345'
       });
 
       const users = await userController.list();

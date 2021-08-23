@@ -5,14 +5,24 @@ export class UserInputData {
   gender: string;
   phone: string;
   email: string;
+  password: string;
 
-  constructor({ name, cpf, birthDate, gender, phone, email }: {
+  constructor({
+    name,
+    cpf,
+    birthDate,
+    gender,
+    phone,
+    email,
+    password,
+  }: {
     name: string;
     cpf: string;
     birthDate: Date;
     gender: string;
     phone: string;
     email: string;
+    password: string;
   }) {
     this.name = name;
     this.cpf = cpf;
@@ -20,5 +30,6 @@ export class UserInputData {
     this.gender = gender;
     this.phone = phone;
     this.email = email;
+    this.password = password;
   }
 }

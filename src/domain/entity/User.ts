@@ -1,5 +1,6 @@
 export class User {
   code: number;
+  password: string;
   name: string;
   cpf: string;
   birthDate: Date;
@@ -15,6 +16,7 @@ export class User {
     gender: string,
     phone: string,
     email: string,
+    password: string,
   ) {
     this.code = code;
     this.name = name;
@@ -23,5 +25,6 @@ export class User {
     this.gender = gender;
     this.phone = phone;
     this.email = email;
+    this.password = password;
   }
 }

@@ -37,6 +37,7 @@ export class UserDAOImplMemory implements IUserDAO {
       user.gender,
       user.phone,
       user.email,
+      oldDataUser.password,
     );
 
     return updatedUser;

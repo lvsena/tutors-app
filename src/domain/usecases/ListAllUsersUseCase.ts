@@ -10,9 +10,9 @@ export class ListAllUsersUseCase {
   }
 
   public async execute(): Promise<UserOutputData[]> {
-    let users = await this.userDAO.getAll();
+    const users = await this.userDAO.getAll();
 
-    users = users.map((user) => {
+    const usersOutput = users.map((user) => {
       return new UserOutputData({
         code: user.code,
         name: user.name,
@@ -24,6 +24,6 @@ export class ListAllUsersUseCase {
       });
     });
 
-    return users;
+    return usersOutput;
   }
 }

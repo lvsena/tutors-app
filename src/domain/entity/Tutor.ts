@@ -17,8 +17,9 @@ export class Tutor extends User {
     gender: string,
     phone: string,
     email: string,
+    password: string
   ) {
-    super(code, name, cpf, birthDate, gender, phone, email);
+    super(code, name, cpf, birthDate, gender, phone, email, password);
     this.masteredShcoolContents = masteredShcoolContents;
     this.academicFormation = academicCourses;
   }
